@@ -14,7 +14,7 @@ All documentation files in this repository are licensed under the
 *Creative Commons Attribution-ShareAlike 4.0 International Public
 License* (CC-by-SA-4.0).
 
-See the shipped-with COPYING files for details.
+See the shipped-with COPYING file for details.
 
 ## Copyright
 
