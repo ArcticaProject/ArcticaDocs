@@ -9,7 +9,7 @@ merged and presented to the end user in such a way that the end user's
 strictly server side application. Telekinesis mediates the communication
 between those server side and client side application parts.
 
-You can imagine Telekines as a rubber band between two application parts
+You can imagine Telekinesis as a rubber band between two application parts
 (one client side, one server side). All communication between those
 application counterparts goes "through" that rubber band.
 
