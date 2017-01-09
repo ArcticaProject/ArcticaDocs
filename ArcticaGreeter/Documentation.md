@@ -1,258 +1,254 @@
-## Arctica Greeter - Installation Guide for Ubuntu <xml> 16.04 LTS (Latest version)<xml/> ##
+## Arctica Greeter - Installation Guide for Ubuntu 16.04 LTS (Latest version) ##
 
-#<span style="color:darkblue; font-family: Cambria;"> Introduction <span/>#
+# Introduction#
 
-<span style="color: black; font-family: Arial; font-size: 14;">
+
 The following document, documents how to install Ubuntu with Arctica Greeter. Make sure when typing the commands for installation, since Ubuntu differ between uppercase and lowercase letters because everything is case-sensitive. Everything that is highlighted with a black background is what you would type in the Terminal.
-</span>
 
-##<span style="color:#0080ff; font-family: Cambria;"> Stage one <span/>##
-<span style="color: black; font-family: Arial; font-size: 14;"> 
+
+## Stage one ##
 **Install Ubuntu:**
-When installing Ubuntu make sure to check both boxes, **Download Updates While Installing Ubuntu** and **Installation of 3rd party applications**, when they both are ticked then press continue. </span>
+When installing Ubuntu make sure to check both boxes, **Download Updates While Installing Ubuntu** and **Installation of 3rd party applications**, when they both are ticked then press continue.
+
 ![1](https://github.com/Korn20000/Testing/blob/master/img/1.png?raw=true)
 
-<span style="color: black; font-family: Arial; font-size: 14;">
 Next step choose **Erase Disk** and press Install Now.
 If it asks you **“Write the changes to disk?”**, ignore it and press continue.
-</span>
 
 ![2](https://github.com/Korn20000/Testing/blob/master/img/2.png?raw=true)
 
-<span style="color: black; font-family: Arial; font-size: 14;"> 
-Next choose location where you live, after the location has been chosen you will get the opportunity to choose your keyboard layout so it can fit to your language.</span>
 
-<span style="color: black; font-family: Arial; font-size: 14;">
-At the end it will ask you to fill in a form with name, computer name, username and password. Make sure that you do not login automatically since it will give complications with login on Arctica Greeter.</span>
+Next choose location where you live, after the location has been chosen you will get the opportunity to choose your keyboard layout so it can fit to your language.
+
+
+At the end it will ask you to fill in a form with name, computer name, username and password. Make sure that you do not login automatically since it will give complications with login on Arctica Greeter.
 
 ![3](https://github.com/Korn20000/Testing/blob/master/img/3.png?raw=true)
 
-<span style="color: black; font-family: Arial; font-size: 14;">Restart when the installation is done.</span>
+Restart when the installation is done.
 
-##<span style="color:#0080ff; font-family: Cambria;"> Stage two <span/>##
+## Stage two ##
 
-<span style="color: black; font-family: Arial; font-size: 14;">
-After Ubuntu is successfully installed open a terminal either by pressing **CTRL+ALT+T** or navigate to **“Search your computer”** and search for terminal.</span>
+After Ubuntu is successfully installed open a terminal either by pressing **CTRL+ALT+T** or navigate to **“Search your computer”** and search for terminal.
+
 ![4](https://github.com/Korn20000/Testing/blob/master/img/4.png?raw=true)
 
-<span style="color: black; font-family: Arial; font-size: 14;">
-When the **“Terminal”** appears you will see a window similar to the picture below.</span>
+When the **“Terminal”** appears you will see a window similar to the picture below.
 ![5](https://github.com/Korn20000/Testing/blob/master/img/5.png?raw=true)
 
 Now that the **“Terminal”** is open run the following commands.
 
-- <span style="color:#f0e9e9; background-color:#5a4b4b;">**sudo -i**</span> 
-<span style="color: black; font-family: Arial; font-size: 14;">(This will give you access as an Admin/Superuser/Root.)
-	- **NOTE:** After the command “**sudo -i**” it will ask you for a password, the password is the same you are using for your login. Also **NOTE** that it will not show your password when typed, it will instead keep a blank field while typing, so type it carefully and press enter.</span><br></br>
+- **sudo -i**
+(This will give you access as an Admin/Superuser/Root.)
+	- **NOTE:** After the command “**sudo -i**” it will ask you for a password, the password is the same you are using for your login. Also **NOTE** that it will not show your password when typed, it will instead keep a blank field while typing, so type it carefully and press enter.<br></br>
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get update**</span> <span style="color: black; font-family: Arial; font-size: 14;">(This will give you the latest available package version in the repositiory.)
-	-	<span style="color: black; font-family: Arial; font-size: 14;">**NOTE:** it will ask you at the end if you want to continue, for this type “<span style="color:#f0e9e9; background-color:#5a4b4b;">**y**</span>” and press enter.</span>
+-	**apt-get update** (This will give you the latest available package version in the repositiory.)
+	-	**NOTE:** it will ask you at the end if you want to continue, for this type “**y**” and press enter.
 
-<span style="color: black; font-family: Arial; font-size: 14;">When it is done with getting the latest package version, you will need to download and install them.</span>
+When it is done with getting the latest package version, you will need to download and install them.
 
-- <span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get upgrade**</span> <span style="color: black; font-family: Arial; font-size: 14;">(This will download and Install the updates, this might take some time to complete.)</span>
+- **apt-get upgrade**(This will download and Install the updates, this might take some time to complete.)
+	- **NOTE:** it will ask you at the end if you want to continue, for this type “**y**” and press enter.
 
-	- <span style="color: black; font-family: Arial; font-size: 14;">**NOTE:** it will ask you at the end if you want to continue, for this type “<span style="color:#f0e9e9; background-color:#5a4b4b;">**y**</span>” and press enter.</span>
+**NOTE: you can distinguish between Admin and User in the Terminal. A user has a $-sign when you are logged in a user, and #-sign if you are**
 
-<span style="color: black; font-family: Arial; font-size: 14;">**NOTE: you can distinguish between Admin and User in the Terminal. A user has a $-sign when you are logged in a user, and #-sign if you are**</span>
+##Stage three ##
 
-##<span style="color:#0080ff; font-family: Cambria;"> Stage three <span/>##
+While you are still logged in as Admin/Superuser/ROOT you will need to add the repository.
 
-<span style="color: black; font-family: Arial; font-size: 14;">While you are still logged in as Admin/Superuser/ROOT you will need to add the repository.</span>
+Type following:
 
-<span style="color: black; font-family: Arial; font-size: 14;">Type following:</span>
+- **nano /etc/apt/sources.list** 
 
-- <span style="color:#f0e9e9; background-color:#5a4b4b;">**nano /etc/apt/sources.list** </span>
+Head to the bottom and press enter to insert new line and type following:
 
-<span style="color: black; font-family: Arial; font-size: 14;">Head to the bottom and press enter to insert new line and type following:</span>
+-	**deb http://packages.arctica-project.org/ubuntu-nightly xenial main**
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**deb http://packages.arctica-project.org/ubuntu-nightly xenial main**</span>
+Now write out the repository by pressing “**CTRL+O**”, it will ask you to give the “**File Name to Write**” press enter to that.
 
-<span style="color: black; font-family: Arial; font-size: 14;">Now write out the repository by pressing “**CTRL+O**”, it will ask you to give the “**File Name to Write**” press enter to that.
+After you have saved it, press “**CTRL+X**” to exit the repository.
 
-<p>After you have saved it, press “**CTRL+X**” to exit the repository.
+You should now be back in the Terminal, type the following command to fetch the key from a server:
 
-<span style="color: black; font-family: Arial; font-size: 14;">You should now be back in the Terminal, type the following command to fetch the key from a server:</span>
+-	**apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A8680F5598DE3101**
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A8680F5598DE3101**</span>
+It will tell you that a “**RSA: 1 is imported**” if it succeeded to import the key.
 
-<span style="color: black; font-family: Arial; font-size: 14;">It will tell you that a “**RSA: 1 is imported**” if it succeeded to import the key.</span>
+Next you need to install git, type following command, it will ask you if you want to continue type “**y**” and press enter:
 
-<span style="color: black; font-family: Arial; font-size: 14;">Next you need to install git, type following command, it will ask you if you want to continue type “<span style="color:#f0e9e9; background-color:#5a4b4b;">**y**</span>” and press enter:</span>
+-	**apt-get install git**
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install git**</span>
+When the installation of Git is done, you will need to create a folder in order to clone git so they are collected in one folder. Therefore you need to type following command so you can create a folder:
 
-<span style="color: black; font-family: Arial; font-size: 14;">When the installation of Git is done, you will need to create a folder in order to clone git so they are collected in one folder. Therefore you need to type following command so you can create a folder:</span>
+-	**mkdir arctica-greeter**
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**mkdir arctica-greeter**</span>
+Now open the folder that you just created by using following command:
 
-<span style="color: black; font-family: Arial; font-size: 14;">Now open the folder that you just created by using following command:</span>
+-	**cd arctica-greeter**
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd arctica-greeter**</span>
+Now you are able to clone the 4 repositories from ArcticaProject, so type following lines one by one:
 
-<span style="color: black; font-family: Arial; font-size: 14;">Now you are able to clone the 4 repositories from ArcticaProject, so type following lines one by one:</span>
+-	**git clone https://github.com/ArcticaProject/arctica-greeter/**
+-	**git clone https://github.com/ArcticaProject/libpam-x2go/**
+-	**git clone https://github.com/ArcticaProject/lightdm-remote-session-x2go/**
+-	**git clone https://github.com/ArcticaProject/remote-logon-service/**
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**git clone https://github.com/ArcticaProject/arctica-greeter/**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**git clone https://github.com/ArcticaProject/libpam-x2go/**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**git clone https://github.com/ArcticaProject/lightdm-remote-session-x2go/**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**git clone https://github.com/ArcticaProject/remote-logon-service/**</span>
-
-<span style="color: black; font-family: Arial; font-size: 14;">If done correctly then the Terminal will tell you, “**Checking connectivity… done**”.</span>
+If done correctly then the Terminal will tell you, “**Checking connectivity… done**”.
 
 
-##<span style="color:#0080ff; font-family: Cambria;"> Stage Four <span/>##
+## Stage Four ##
 
-<span style="color: black; font-family: Arial; font-size: 14;">Install the dependencies for the four packages which you acquired from Git. For this you will need to run the command “apt-get install” on the following packages. When installing it will sometimes ask you if you want to continue type “<span style="color:#f0e9e9; background-color:#5a4b4b;">**y**</span>” and press enter.</span>
+Install the dependencies for the four packages which you acquired from Git. For this you will need to run the command “apt-get install” on the following packages. When installing it will sometimes ask you if you want to continue type “**y**” and press enter.
 
 **Example:**
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install debhelper**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install dh-autoreconf**</span>
+-	**apt-get install debhelper**
+-	**apt-get install dh-autoreconf**
 -	**etc. etc. etc.** 
 
-<span style="color: black; font-family: Arial; font-size: 14;">The following packages that need to be installed:</span>
+The following packages that need to be installed:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**debhelper**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**dh-autoreconf**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**fonts-droid-fallback**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**gnome-common**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**gnome-settings-daemon-dev**</span>
+-	**debhelper**
+-	**dh-autoreconf**
+-	**fonts-droid-fallback**
+-	**gnome-common**
+-	**gnome-settings-daemon-dev**
 
-<span style="color: black; font-family: Arial; font-size: 14;">In order to install libayatana you will need to update the packages type following:</span>
+In order to install libayatana you will need to update the packages type following:
 
-- <span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get update**</span>
+- **apt-get update**
 
-<span style="color: black; font-family: Arial; font-size: 14;">Now carry on with “<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install**</span>” followed by the command.</span>
+Now carry on with “**apt-get install**” followed by the command.
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libayatana-ido3-0.4-dev**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libayatana-indicator3-dev** </span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libcanberra-dev**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libgnome-desktop-3-dev** </span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libgtk-3-dev** </span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**liblightdm-gobject-1-dev**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**valac**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**xvfb**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**fonts-cantarell**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**fonts-cabin**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**gnome-settings-daemon**</span>
+-	**libayatana-ido3-0.4-dev**
+-	**libayatana-indicator3-dev**
+-	**libcanberra-dev**
+-	**libgnome-desktop-3-dev**
+-	**libgtk-3-dev**
+-	**liblightdm-gobject-1-dev**
+-	**valac**
+-	**xvfb**
+-	**fonts-cantarell**
+-	**fonts-cabin**
+-	**gnome-settings-daemon**
 
-<span style="color: black; font-family: Arial; font-size: 14;">Install libpam-x2go dependencies, use the same command “<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install**</span>” followed by the dependencies:</span>
+Install libpam-x2go dependencies, use the same command “**apt-get install**” followed by the dependencies:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libgtest-dev**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libpam0g-dev**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libssh-dev**</span> 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**cdbs**</span> 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**socat**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**pyhoca-cli**</span>
+-	**libgtest-dev**
+-	**libpam0g-dev**
+-	**libssh-dev**
+-	**cdbs**
+-	**socat**
+-	**pyhoca-cli**
 
  
-<span style="color: black; font-family: Arial; font-size: 14;">Install the lightdm-remote-session-x2go dependencies, use the same command “<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install**</span>” followed by the dependencies:</span>
+Install the lightdm-remote-session-x2go dependencies, use the same command “**apt-get install**>” followed by the dependencies:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**dh-apparmor**</span>
+-	**dh-apparmor**
  
-<span style="color: black; font-family: Arial; font-size: 14;">install remote-logon-service dependencies, use the same command “<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install**</span>” followed by the dependencies:</span>
+install remote-logon-service dependencies, use the same command “**apt-get install**” followed by the dependencies:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**dbus-test-runner**</span>  
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libdbustest1-dev**</span> 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libgcrypt11-dev**</span> 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libjson-glib-dev**</span> 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libnm-glib-dev** </span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**libsoup2.4-dev**</span>
+-	**dbus-test-runner**
+-	**libdbustest1-dev**
+-	**libgcrypt11-dev**
+-	**libjson-glib-dev**
+-	**libnm-glib-dev**
+-	**libsoup2.4-dev**
 
-##<span style="color:#0080ff; font-family: Cambria;"> Stage five <span/>##
+## Stage five ##
 
-<span style="color: black; font-family: Arial; font-size: 14;">Install the devscripts, using same command “<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install**</span>” followed by the dependence:</span>
+Install the devscripts, using same command “**apt-get install**” followed by the dependence:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install devscripts**</span>
+-	**apt-get install devscripts**
 
-<span style="color: black; font-family: Arial; font-size: 14;">Now navigate to each repository folder that was created, in order to open the folders you will need to type “<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd**</span>” in front of each folder, though to go back one folder you will need to type “<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd ..**</span>”</span>
+Now navigate to each repository folder that was created, in order to open the folders you will need to type “**cd**” in front of each folder, though to go back one folder you will need to type “**cd ..**”
 
-<span style="color: black; font-family: Arial; font-size: 14;">Type following:</span>
+Type following:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd arctica-greeter**</span>
+-	**cd arctica-greeter**
 
-<span style="color: black; font-family: Arial; font-size: 14;">Now you are in the folder here you will need to run the command:</span>
+Now you are in the folder here you will need to run the command:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**debuild –uc –us**</span>
+-	**debuild –uc –us**
 
-<span style="color: black; font-family: Arial; font-size: 14;">exit the folder by typing “<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd ..**</span>” and navigate to the other folders and do the same</span>
+exit the folder by typing “**cd ..**” and navigate to the other folders and do the same
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd libpam-x2go**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd lightdm-remote-session-x2go**</span>
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd remote-logon-service**</span>
+-	**cd libpam-x2go**
+-	**cd lightdm-remote-session-x2go**
+-	**cd remote-logon-service**
 
-<span style="color: black; font-family: Arial; font-size: 14;">Go back to the folder where the 4 repositories were created using the command “<span style="color:#f0e9e9; background-color:#5a4b4b;">**cd ..**</span>” and install the created packages:</span>
+Go back to the folder where the 4 repositories were created using the command “**cd ..**” and install the created packages:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**sudo dpkg -i** ***.deb**</span>
+-	**sudo dpkg -i** ***.deb**
 
-<span style="color: black; font-family: Arial; font-size: 14;">In same folder install thin-client-config-agent:</span>
+In same folder install thin-client-config-agent:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**apt-get install thin-client-config-agent**</span>
+-	**apt-get install thin-client-config-agent**
 
-##<span style="color:#0080ff; font-family: Cambria;"> Stage six <span/>##
+## Stage six ##
 
-<span style="color: black; font-family: Arial; font-size: 14;">Open the following file:</span>
+Open the following file:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**nano /etc/lightdm/lightdm.conf.d/90-arctica-greeter.conf**</span>
+-	**nano /etc/lightdm/lightdm.conf.d/90-arctica-greeter.conf**
 	
-<span style="color: black; font-family: Arial; font-size: 14;">Remove the “<span style="color:#f0e9e9; background-color:#5a4b4b;">**#**</span>” on the following lines:</span>
+Remove the “**#**” on the following lines:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**#greeter session=arctica-greeter**</span>
-- <span style="color:#f0e9e9; background-color:#5a4b4b;">**#greeter-show-manual-login=false**</span>
+-	**#greeter session=arctica-greeter**
+- 	**#greeter-show-manual-login=false**
 
-<span style="color: black; font-family: Arial; font-size: 14;">So the file will look similar to the picture below.</span>
+So the file will look similar to the picture below.
 ![6](https://github.com/Korn20000/Testing/blob/master/img/6.png?raw=trueraw=true)
-<span style="color: black; font-family: Arial; font-size: 14;">
-
-Now press “**CTRL+O**”  and press enter to save the file, afterwards exit it by pressing “**CTRL+X**”.</span>
-
-<span style="color: black; font-family: Arial; font-size: 14;">Now test the Connection to the server and type following:</span>
-
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**pyhoca-cli --new  --server 92.246.17.152  --port 58005 --user testuser --pass testuser  --command UNITY**</span>
-
-<span style="color: black; font-family: Arial; font-size: 14;">If you connect then an x2go session will start and it will show you a new desktop. Exit the desktop by logging out and the press “**CTRL+C**".</span>
-
-<span style="color: black; font-family: Arial; font-size: 14;">Now edit the environment file, open the file by typing:</span>
-
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**nano /etc/environment**</span>
-
-<span style="color: black; font-family: Arial; font-size: 14;">In the environment press down arrow in order to go to a new line and insert following line:</span>
-
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**SERVER_ROOT=http://92.246.17.152:8080/uccs/inifile/**</span>
-
-<span style="color: black; font-family: Arial; font-size: 14;">Now press “**CTRL+O**” and press enter to save the file, afterwards exit it by pressing “**CTRL+X**”.</span>
-
-<span style="color: black; font-family: Arial; font-size: 14;">Now run following commands, though NOTE: username and password are both testuser, also when typing password and username do not include **<>**.</span>
-
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**export SERVER_ROOT**</span>
-
-<span style="color: black; font-family: Arial; font-size: 14;">Type exit and press enter this will put you back to the very beginning, log back in as an Admin/Superuser/ROOT by typing following:</span>
 
 
-- <span style="color:#f0e9e9; background-color:#5a4b4b;">**sudo su**</span>
+Now press “**CTRL+O**”  and press enter to save the file, afterwards exit it by pressing “**CTRL+X**”.
+
+Now test the Connection to the server and type following:
+
+-	**pyhoca-cli --new  --server 92.246.17.152  --port 58005 --user testuser --pass testuser  --command UNITY**
+
+If you connect then an x2go session will start and it will show you a new desktop. Exit the desktop by logging out and the press “**CTRL+C**".
+
+Now edit the environment file, open the file by typing:
+
+-	**nano /etc/environment**
+
+In the environment press down arrow in order to go to a new line and insert following line:
+
+-	**SERVER_ROOT=http://92.246.17.152:8080/uccs/inifile/**
+
+Now press “**CTRL+O**” and press enter to save the file, afterwards exit it by pressing “**CTRL+X**”.
+
+Now run following commands, though NOTE: username and password are both testuser, also when typing password and username do not include **<>**.
+
+-	**export SERVER_ROOT**
+
+Type exit and press enter this will put you back to the very beginning, log back in as an Admin/Superuser/ROOT by typing following:
+
+
+- **sudo su**
 	- **type your password as you did in the beginning**
 
-<span style="color: black; font-family: Arial; font-size: 14;">Now type following to get information about remote desktop servers:</span>
+Now type following to get information about remote desktop servers:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**echo <password> | thin-client-config-agent <username>**</span>
+-	**echo <.password> | thin-client-config-agent <.username>**
 
-<span style="color: black; font-family: Arial; font-size: 14;">In your case it could look like:</span>
+In your case it could look like:
 
-- <span style="color:#f0e9e9; background-color:#5a4b4b;">**echo testuser | thin-client-config-agent testuser**</span>
+- 	**echo testuser | thin-client-config-agent testuser**
 
-<span style="color: black; font-family: Arial; font-size: 14;">In order to connect to a remote server you have to tell it which IP to ping, therefore open the remote-logon-service file by typing following:</span>
+In order to connect to a remote server you have to tell it which IP to ping, therefore open the remote-logon-service file by typing following:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**nano /etc/remote-logon-service.conf**</span>
+-	**nano /etc/remote-logon-service.conf**
 
-<span style="color: black; font-family: Arial; font-size: 14;">Change the line “**URI=http://localhost:8080/uccs/inifile/**” to:</span>
+Change the line “**URI=http://localhost:8080/uccs/inifile/**” to:
 
--	<span style="color:#f0e9e9; background-color:#5a4b4b;">**URI=http://92.246.17.152:8080/uccs/inifile**/</span>
+-	**URI=http://92.246.17.152:8080/uccs/inifile/**
 
-<span style="color: black; font-family: Arial; font-size: 14;">Now press “**CTRL+O**”  and press enter to save the file, afterwards exit it by pressing “**CTRL+X**”.</span>
+Now press “**CTRL+O**”  and press enter to save the file, afterwards exit it by pressing “**CTRL+X**”.
 
-<span style="color: black; font-family: Arial; font-size: 14;">Type “<span style="color:#f0e9e9; background-color:#5a4b4b;">**exit**</span>” in order to logout as Admin, type “<span style="color:#f0e9e9; background-color:#5a4b4b;">**exit**</span>” again so it will close the Terminal. Restart the system and you will see Arctica Greeter as your login screen.</span>
+Type “**exit**” in order to logout as Admin, type “**exit**” again so it will close the Terminal. Restart the system and you will see Arctica Greeter as your login screen.
 
-##<span style="color:#0080ff; font-family: Cambria;"> Additional notes, how to change resolution <span/>##
+## Additional notes, how to change resolution ##
 
 http://code.x2go.org/doc/pyhoca-cli/man/man1/pyhoca-cli.1.html jan@fleten.net @ 12:38
 
