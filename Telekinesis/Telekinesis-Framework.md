@@ -228,7 +228,7 @@ TeKi Client.
 
 #### Unix file sockets vs. local TCP sockets
 
-On client platforms with propper Unix file socket support, Unix file
+On client platforms with proper Unix file socket support, Unix file
 sockets are used everywhere. On other platforms, TeKi Client falls back
 to using TCP sockets (bound to localhost only). Opening ports on
 multi-user client systems potentially exposes those sockets to DoS
