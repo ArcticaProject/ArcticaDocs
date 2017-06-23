@@ -39,6 +39,10 @@ over the network
           ```
           $ sudo apt-get install arctica-testclient-nx3
           ```
+      1. Install the client-side part of Telekinesis:
+          ```
+          $ sudo apt-get install telekinesis-client
+          ```
       1. Install the client-side part of the Arctica Web Browser:
           ```
           $ sudo apt-get install libarctica-browser-overlay-perl
@@ -47,6 +51,10 @@ over the network
       1. Install the Arctica Test Server (again a very very simple script)
           ```
           $ sudo apt-get install arctica-testserver-nx3
+          ```
+      1. Install the server-side part of Telekinesis:
+          ```
+          $ sudo apt-get install telekinesis-server
           ```
       1. Install the server-side part of the Arctica Web Browser (currently, this is a very simplistic Perl script):
           ```
