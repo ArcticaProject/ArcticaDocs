@@ -17,11 +17,13 @@ over the network
       ```
       Put these lines in that to be created file, if you try this with Ubuntu 16.04:
       ```
+      deb http://packages.arctica-project.org/ubuntu xenial  main
       deb http://packages.arctica-project.org/ubuntu-nightly xenial  main
       deb http://packages.arctica-project.org/ubuntu-extras  xenial  main
       ```
       Or these two lines, if you try this with Debian 9:
       ```
+      deb http://packages.arctica-project.org/debian stretch main
       deb http://packages.arctica-project.org/debian-nightly stretch main
       deb http://packages.arctica-project.org/debian-extras  stretch main
       ```
