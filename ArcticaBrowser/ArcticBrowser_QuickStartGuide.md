@@ -43,7 +43,7 @@ over the network
           ```
       1. Install the client-side part of the Arctica Web Browser:
           ```
-          $ sudo apt-get install libarctica-browser-overlay-perl
+          $ sudo apt-get install arctica-browser-overlay
           ```
   1. Perform these steps only on "The Server" virtual machine:
       1. Install the Arctica Test Server (again a very very simple script)
@@ -52,9 +52,9 @@ over the network
           ```
       1. Install the server-side part of the Arctica Web Browser (currently, this is a very simplistic Perl script):
           ```
-          $ sudo apt-get install arctica-testbrowser
+          $ sudo apt-get install arctica-browser
           ```
   1. On "The Client" VM now logon graphically, if you haven't done so already.
   1. Launch the script ``arctica-testclient-nx3 <user>@<the-server-vm>``. This should fire up a remote desktop XFCE session, running on "The Server" VM.
-  1. In the remote XFCE session, launch a Terminal window. Start Arctica's test browser from there: ``arctica-testbrowser``
+  1. In the remote XFCE session, launch a Terminal window. Start Arctica Browser from there: ``arctica-browser``
   1. You should now see a browser window coming up in the remote session. See the concept section above to understand what's happening on your screen right now. 
